@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 3: Simple Flask Application</title>
+
+    <!--Meta Elements-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <h1>Assignment 3: Simple Flask Application Index</h1>
+    <ul>
+      {% for item in users.users %}
+        <li>
+          <p>Username: {{ item.username }}</p>
+          <p>email: {{ item.email }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </body> 
+</html>
